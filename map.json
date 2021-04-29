@@ -24,7 +24,7 @@
                 {
                  "name":"script_hilfe",
                  "type":"string",
-                 "value":"script2.js"
+                 "value":"script.js"
                 }, 
                 {
                  "name":"zone",
