@@ -31,41 +31,38 @@ function ersteHilfe(){
 			popup.close();
 		}
 	}]);
-);
+
 
 }
-
 
 
 WA.onEnterZone(zone_hilfeSpawn, () => {
-if (!firstTime){
-	firstTime = true;
-	ersteHilfe();
-}
-else {
-	WA.openPopup("popup_info",'Brauchst du nocmal die Übersicht ?',[
-	{
-		label: "Ja, bitte!",
-		className: "primary",
-		callback: (popup) => {
-			popuo.close();
+	if(!firstTime){
+		firstTime = false;
 		ersteHilfe();
+	}
+	else{
+		WA.openPopup("popup_info", 'Brauchst du nocmal die Übersicht ?',[
+			{
+				label: "Ja, bitte!",
+				className: "primary",
+				callback: (popup) => {
+					popuo.close();
+					ersteHilfe();}
 		},
-		{label: "Nein, lieber nicht",
-		className: "warning",
-		callback: (popup) => {
-			popup.close();
-		}
-	}]);
-);
+		{
+				label: "Nein, lieber nicht",
+				className: "warning",
+				callback: (popup) => {
+					popup.close();}
+			}
+		])
+	}
+})
 	
-}
-}
-}
-
 function closePopUp(){
-if(currentPopup !== undefined) {
-	currentPopup.close();
-	currentPopup = undefined;
+	if(currentPopup!==undefined){
+		currentPopup.close();
+		currentPopup=undefined;
 	}
 }
