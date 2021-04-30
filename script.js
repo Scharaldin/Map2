@@ -65,4 +65,4 @@ function closePopUp(){
 		currentPopup.close();
 		currentPopup=undefined;
 	}
-}
+} 
