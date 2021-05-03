@@ -1,6 +1,6 @@
 var firstTime =false;
 var currentPopup = undefined;
-var zoneHilfe = zone_hilfeSpawn;
+var zoneHilfe = zone_hilfe;
 
 
 function ersteHilfe(){

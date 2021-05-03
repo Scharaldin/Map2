@@ -29,7 +29,7 @@
                 {
                  "name":"zone",
                  "type":"string",
-                 "value":"zone_hilfeSpawn"
+                 "value":"zone_hilfe"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -335,11 +335,6 @@
          "name":"script",
          "type":"string",
          "value":"script.js"
-        }, 
-        {
-         "name":"zone",
-         "type":"string",
-         "value":"zone_hilfeSpawn"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.5.0",
