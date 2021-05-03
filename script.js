@@ -1,6 +1,17 @@
 var firstTime =false;
 var currentPopup = undefined;
 var zoneHilfe = "zone_hilfe";
+var Pop = undefined;
+var Pop2 = undefined;
+var Pop3 = undefined;
+var Pop4 = undefined;
+var Pop5 = undefined;
+var Pop6 = undefined;
+var Pop7 = undefined;
+var Pop8 = undefined;
+var Pop9 = undefined;
+var Pop10 = undefined;
+var Pop11 = undefined;
 
 
 function ersteHilfe(){
@@ -12,18 +23,18 @@ function ersteHilfe(){
 		className: "primary",
 		callback: (popup) => {
 			popup.close();
-			WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
-			WA.openPopup("popup_mapStudio", 'Hier gehts zum Inovation Studio von Avanade' , []);
-			WA.openPopup("popup_meetingraum",'Hier ist unser Meetingraum',[]);
-			WA.openPopup("popup_finance",'Hier gehts zum Finance',[]);
-			WA.openPopup("popup_purchasing",'Hier gehts zum Purchasing',[]);
-			WA.openPopup("popup_RD",'Hier ist unser R&D',[]);
-			WA.openPopup("popup_QA",'Hier ist unser QA',[]);
-			WA.openPopup("popup_production",'Hier findet die Produktion statt',[]);
-			WA.openPopup("popup_distribution",'Hier gehts zur Distribution',[]);
-			WA.openPopup("popup_marketingArea",'Hier ist die Marketing Area',[]);
-			WA.openPopup("popup_dealer",'Hier ist die Dealer Area',[]);
-			WA.openPopup("popup_customer",'Hier ist der Customer Berreich',[]);
+		Pop1 =	WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
+		Pop2 =	WA.openPopup("popup_mapStudio", 'Hier gehts zum Inovation Studio von Avanade' , []);
+		Pop3 =	WA.openPopup("popup_meetingraum",'Hier ist unser Meetingraum',[]);
+		Pop3 =	WA.openPopup("popup_finance",'Hier gehts zum Finance',[]);
+		Pop4 =	WA.openPopup("popup_purchasing",'Hier gehts zum Purchasing',[]);
+		Pop5 =	WA.openPopup("popup_RD",'Hier ist unser R&D',[]);
+		Pop6 =	WA.openPopup("popup_QA",'Hier ist unser QA',[]);
+		Pop7 =	WA.openPopup("popup_production",'Hier findet die Produktion statt',[]);
+		Pop8 =	WA.openPopup("popup_distribution",'Hier gehts zur Distribution',[]);
+		Pop9 =	WA.openPopup("popup_marketingArea",'Hier ist die Marketing Area',[]);
+		Pop10 =	WA.openPopup("popup_dealer",'Hier ist die Dealer Area',[]);
+		Pop11 =	WA.openPopup("popup_customer",'Hier ist der Customer Berreich',[]);
 				
 			}
 		},{label: "Nein, lieber nicht",
@@ -39,16 +50,16 @@ function ersteHilfe(){
 
 WA.onEnterZone(zoneHilfe, () => {
 	if(!firstTime){
-		firstTime = false;
+		firstTime = true;
 		ersteHilfe();
 	}
 	else{
-		WA.openPopup("popup_info", 'Brauchst du nocmal die Übersicht ?',[
+		currentPopup = WA.openPopup("popup_info", 'Brauchst du nochmal die Übersicht ?',[
 			{
 				label: "Ja, bitte!",
 				className: "primary",
 				callback: (popup) => {
-					popuo.close();
+					popup.close();
 					ersteHilfe();}
 		},
 		{
@@ -65,6 +76,30 @@ function closePopUp(){
 	if(currentPopup!==undefined){
 		currentPopup.close();
 		currentPopup=undefined;
+} 
+	if(Pop!==undefined){
+		Pop.close();
+		Pop = undefined;
+		Pop2.close();
+		Pop2 = undefined;
+		Pop3.close();
+		Pop3 = undefined;
+		Pop4.close();
+		Pop4 = undefined;
+		Pop5.close();
+		Pop5 = undefined;
+		Pop6.close();
+		Pop6 = undefined;
+		Pop7.close();
+		Pop7 = undefined;
+		Pop8.close();
+		Pop8 = undefined;
+		Pop9.close();
+		Pop9 = undefined;
+		Pop10.close();
+		Pop10 = undefined;
+		Pop11.close();
+		Pop11 = undefined;
 	}
 }
 
