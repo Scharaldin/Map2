@@ -1,5 +1,6 @@
 var firstTime =false;
 var currentPopup = undefined;
+var zoneHilfe = zone_hilfeSpawn;
 
 
 function ersteHilfe(){
@@ -36,7 +37,7 @@ function ersteHilfe(){
 }
 
 
-WA.onEnterZone(zone_hilfeSpawn, () => {
+WA.onEnterZone(zoneHilfe, () => {
 	if(!firstTime){
 		firstTime = false;
 		ersteHilfe();
@@ -65,4 +66,4 @@ function closePopUp(){
 		currentPopup.close();
 		currentPopup=undefined;
 	}
-} 
+}
