@@ -12,6 +12,10 @@ var Pop8 = undefined;
 var Pop9 = undefined;
 var Pop10 = undefined;
 var Pop11 = undefined;
+var Pop12 = undefined;
+var Pop13 = undefined;
+var Pop14 = undefined;
+
 
 
 function ersteHilfe(){
@@ -35,6 +39,9 @@ function ersteHilfe(){
 		Pop9 =	WA.openPopup("popup_marketingArea",'Hier ist die Marketing Area',[]);
 		Pop10 =	WA.openPopup("popup_dealer",'Hier ist die Dealer Area',[]);
 		Pop11 =	WA.openPopup("popup_customer",'Hier ist der Customer Berreich',[]);
+		Pop12 =	WA.openPopup("popup_itArea",'Hier ist der IT Berreich',[]);
+		Pop13 =	WA.openPopup("popup_serviceArea",'Hier ist der Service Berreich',[]);
+		Pop14 =	WA.openPopup("popup_salesArea",'Hier ist der Sales Berreich',[]);
 				
 			}
 		},{label: "Nein, lieber nicht",
@@ -100,6 +107,12 @@ function closePopUp(){
 		Pop10 = undefined;
 		Pop11.close();
 		Pop11 = undefined;
+		Pop12.close();
+		Pop12 = undefined;
+		Pop13.close();
+		Pop13 = undefined;
+		Pop14.close();
+		Pop14 = undefined;
 	}
 }
 

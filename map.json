@@ -224,7 +224,7 @@
                 {
                  "height":198,
                  "id":7,
-                 "name":"popum_production",
+                 "name":"popup_production",
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -240,8 +240,8 @@
                  "type":"",
                  "visible":true,
                  "width":298,
-                 "x":3101,
-                 "y":197
+                 "x":2763,
+                 "y":95
                 }, 
                 {
                  "height":198,
@@ -308,6 +308,39 @@
                  "width":298,
                  "x":81,
                  "y":415
+                }, 
+                {
+                 "height":198,
+                 "id":15,
+                 "name":"popup_serviceArea",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":298,
+                 "x":3422,
+                 "y":95
+                }, 
+                {
+                 "height":198,
+                 "id":16,
+                 "name":"popup_salesArea",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":298,
+                 "x":3101,
+                 "y":95
+                }, 
+                {
+                 "height":198,
+                 "id":17,
+                 "name":"popup_itArea",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":298,
+                 "x":2313,
+                 "y":95
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -328,7 +361,7 @@
          "y":0
         }],
  "nextlayerid":14,
- "nextobjectid":15,
+ "nextobjectid":18,
  "orientation":"orthogonal",
  "properties":[
         {
