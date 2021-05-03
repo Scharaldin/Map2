@@ -11,7 +11,7 @@ function ersteHilfe(){
 		label: "Ja, bitte!",
 		className: "primary",
 		callback: (popup) => {
-			popuo.close();
+			popup.close();
 			WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
 			WA.openPopup("popup_mapStudio", 'Hier gehts zum Inovation Studio von Avanade' , []);
 			WA.openPopup("popup_meetingraum",'Hier ist unser Meetingraum',[]);
@@ -66,4 +66,8 @@ function closePopUp(){
 		currentPopup.close();
 		currentPopup=undefined;
 	}
+}
+
+WA.onLeaveZone(zoneHilfe, () =>{
+	closePopUp();
 }
