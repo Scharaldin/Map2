@@ -15,6 +15,8 @@ var Pop11 = undefined;
 var Pop12 = undefined;
 var Pop13 = undefined;
 var Pop14 = undefined;
+var Pop15 = undefined;
+var Pop16 = undefined;
 
 
 
@@ -30,19 +32,19 @@ function ersteHilfe(){
 		Pop =	WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
 		Pop2 =	WA.openPopup("popup_mapStudio", 'Hier gehts zum Inovation Studio von Avanade' , []);
 		Pop3 =	WA.openPopup("popup_meetingraum",'Hier ist unser Meetingraum',[]);
-		Pop3 =	WA.openPopup("popup_finance",'Hier gehts zum Finance',[]);
-		Pop4 =	WA.openPopup("popup_purchasing",'Hier gehts zum Purchasing',[]);
-		Pop5 =	WA.openPopup("popup_RD",'Hier ist unser R&D',[]);
-		Pop6 =	WA.openPopup("popup_QA",'Hier ist unser QA',[]);
-		Pop7 =	WA.openPopup("popup_production",'Hier findet die Produktion statt',[]);
-		Pop8 =	WA.openPopup("popup_distribution",'Hier gehts zur Distribution',[]);
-		Pop9 =	WA.openPopup("popup_marketingArea",'Hier ist die Marketing Area',[]);
-		Pop10 =	WA.openPopup("popup_dealer",'Hier ist die Dealer Area',[]);
-		Pop11 =	WA.openPopup("popup_customer",'Hier ist der Customer Berreich',[]);
-		Pop12 =	WA.openPopup("popup_itArea",'Hier ist der IT Berreich',[]);
-		Pop13 =	WA.openPopup("popup_serviceArea",'Hier ist der Service Berreich',[]);
-		Pop14 =	WA.openPopup("popup_salesArea",'Hier ist der Sales Berreich',[]);
-		Pop14 =	WA.openPopup("popup_bewegen",'Bewegen kannst du dich mit den Pfeiltasten oder W,A,S,D. Sprinten geht mit der Shift Taste. Falls du mit etwas Interagieren kannst bekommest du ein Popup unten im Bildschirm',[]);
+		Pop4 =	WA.openPopup("popup_finance",'Hier gehts zum Finance',[]);
+		Pop5 =	WA.openPopup("popup_purchasing",'Hier gehts zum Purchasing',[]);
+		Pop6 =	WA.openPopup("popup_RD",'Hier ist unser R&D',[]);
+		Pop7 =	WA.openPopup("popup_QA",'Hier ist unser QA',[]);
+		Pop8 =	WA.openPopup("popup_production",'Hier findet die Produktion statt',[]);
+		Pop9 =	WA.openPopup("popup_distribution",'Hier gehts zur Distribution',[]);
+		Pop10 =	WA.openPopup("popup_marketingArea",'Hier ist die Marketing Area',[]);
+		Pop11 =	WA.openPopup("popup_dealer",'Hier ist die Dealer Area',[]);
+		Pop12 =	WA.openPopup("popup_customer",'Hier ist der Customer Berreich',[]);
+		Pop13 =	WA.openPopup("popup_itArea",'Hier ist der IT Berreich',[]);
+		Pop14 =	WA.openPopup("popup_serviceArea",'Hier ist der Service Berreich',[]);
+		Pop15 =	WA.openPopup("popup_salesArea",'Hier ist der Sales Berreich',[]);
+		Pop16 =	WA.openPopup("popup_bewegen",'Bewegen kannst du dich mit den Pfeiltasten oder W,A,S,D. Sprinten geht mit der Shift Taste. Falls du mit etwas Interagieren kannst bekommest du ein Popup unten im Bildschirm',[]);
 				
 			}
 		},{label: "Nein, lieber nicht",
@@ -114,6 +116,10 @@ function closePopUp(){
 		Pop13 = undefined;
 		Pop14.close();
 		Pop14 = undefined;
+		Pop15.close();
+		Pop15 = undefined;
+		Pop16.close();
+		Pop16 = undefined;
 	}
 }
 
