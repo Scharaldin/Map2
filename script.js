@@ -17,13 +17,13 @@ var Pop11 = undefined;
 function ersteHilfe(){
 
 	closePopUp();
-	currentPopup = WA.openPopup("popup_info", 'Wilkommen auf unserer Map. Willst du sehen wo alles ist ?',[
+	currentPopup = WA.openPopup("popup_info", 'Willst du sehen wo alles ist ?',[
 	{
 		label: "Ja, bitte!",
 		className: "primary",
 		callback: (popup) => {
 			popup.close();
-		Pop1 =	WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
+		Pop =	WA.openPopup("popup_info2", 'Sehr gut dann zoom doch bitte mit hilfe von STRG + Scroll ein bisschen raus',[]);
 		Pop2 =	WA.openPopup("popup_mapStudio", 'Hier gehts zum Inovation Studio von Avanade' , []);
 		Pop3 =	WA.openPopup("popup_meetingraum",'Hier ist unser Meetingraum',[]);
 		Pop3 =	WA.openPopup("popup_finance",'Hier gehts zum Finance',[]);
@@ -54,17 +54,17 @@ WA.onEnterZone(zoneHilfe, () => {
 		ersteHilfe();
 	}
 	else{
-		currentPopup = WA.openPopup("popup_info", 'Brauchst du nochmal die Übersicht ?',[
+		currentPopup = WA.openPopup("popup_info", 'Findest du dich zurecht ?',[
 			{
-				label: "Ja, bitte!",
+				label: "Nein",
 				className: "primary",
 				callback: (popup) => {
 					popup.close();
 					ersteHilfe();}
 		},
 		{
-				label: "Nein, lieber nicht",
-				className: "warning",
+				label: "Ja alles gut",
+				className: "primary",
 				callback: (popup) => {
 					popup.close();}
 			}
