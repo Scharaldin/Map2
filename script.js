@@ -70,4 +70,4 @@ function closePopUp(){
 
 WA.onLeaveZone(zoneHilfe, () =>{
 	closePopUp();
-}
+});
