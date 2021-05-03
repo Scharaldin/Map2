@@ -42,7 +42,7 @@ function ersteHilfe(){
 		Pop12 =	WA.openPopup("popup_itArea",'Hier ist der IT Berreich',[]);
 		Pop13 =	WA.openPopup("popup_serviceArea",'Hier ist der Service Berreich',[]);
 		Pop14 =	WA.openPopup("popup_salesArea",'Hier ist der Sales Berreich',[]);
-		Pop14 =	WA.openPopup("popup_bewegen",'Bewegen kannst du dich mit den Pfeiltasten oder W,A,S,D. Sprinten geht mit der Shift Taste',[]);
+		Pop14 =	WA.openPopup("popup_bewegen",'Bewegen kannst du dich mit den Pfeiltasten oder W,A,S,D. Sprinten geht mit der Shift Taste. Falls du mit etwas Interagieren kannst bekommest du ein Popup unten im Bildschirm',[]);
 				
 			}
 		},{label: "Nein, lieber nicht",
