@@ -9,7 +9,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -108,7 +108,7 @@
                  "value":"zone_hilfe"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -126,7 +126,7 @@
                  "value":"https:\/\/play.workadventu.re\/@\/avanade-virtual-office\/avanade-virtual-office\/classe"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -149,7 +149,7 @@
                  "value":"onaction"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -161,7 +161,7 @@
          "name":"floor",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -185,7 +185,7 @@
          "name":"machinery",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":123,
          "x":0,
          "y":0
@@ -443,7 +443,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
