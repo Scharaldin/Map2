@@ -1,6 +1,8 @@
 var firstTime =false;
 var currentPopup = undefined;
 var zoneHilfe = "zone_hilfe";
+var zoneService = "zone_service";
+var viewSales ='https://scharaldin.github.io/Map2/service_area.png';
 var Pop = undefined;
 var Pop2 = undefined;
 var Pop3 = undefined;
@@ -57,6 +59,26 @@ function ersteHilfe(){
 
 }
 
+
+WA.onEnterZone(zoneService,() => {
+	currentPopup = WA.openPopup("popup_serviceArea",'Do you want an overview over the service room?',[
+		{
+			label: "Ja",
+			className: "primary",
+			callback: (popup) => {
+				popup.close();
+				WA.openCoWebSite(viewSales);
+			}
+			},{
+				label:"Nein",
+				className: "warning",
+				callback: (popup) => {
+					popup.close();
+				}
+			}
+		
+	])
+});
 
 WA.onEnterZone(zoneHilfe, () => {
 	if(!firstTime){
