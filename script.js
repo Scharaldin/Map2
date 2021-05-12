@@ -2,7 +2,7 @@ var firstTime =false;
 var currentPopup = undefined;
 var zoneHilfe = "zone_hilfe";
 var zoneService = "zone_service";
-var viewSales ='https://scharaldin.github.io/Map2/service_area.png';
+var viewSales ='https://scharaldin.github.io/Map2/service_area.PNG';
 var Pop = undefined;
 var Pop2 = undefined;
 var Pop3 = undefined;
@@ -148,3 +148,8 @@ function closePopUp(){
 WA.onLeaveZone(zoneHilfe, () =>{
 	closePopUp();
 });
+
+WA.onLeaveZone(zoneService, () =>{
+	closePopUp();
+	WA.closeCoWebSite();
+})
